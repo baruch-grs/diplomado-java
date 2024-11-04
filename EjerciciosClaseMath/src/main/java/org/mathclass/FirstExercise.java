@@ -1,13 +1,8 @@
 package org.mathclass;
 
 public class FirstExercise {
-    int base = 2;
-    int exponent = 3;
-    static double pow(int base, int exponent) {
-        return Math.pow(base, exponent);
-    }
-
+    static int base = 2, exponent = 4;
     public static void main(String[] args) {
-        System.out.print(pow(base, exponent));
+        System.out.print(Math.pow(base, exponent));
     }
 }
