@@ -1,8 +1,9 @@
 package org.mathclass;
 
 public class FirstExercise {
-    static int base = 2, exponent = 4;
+
     public static void main(String[] args) {
-        System.out.print(Math.pow(base, exponent));
+        int base = 2, exponent = 4;
+        System.out.println("Pow function with Math class: " + Math.pow(base, exponent));
     }
 }
