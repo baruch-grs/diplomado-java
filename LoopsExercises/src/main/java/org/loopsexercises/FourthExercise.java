@@ -1,11 +1,7 @@
 package org.loopsexercises;
 
-import org.loopsexercises.Dividers;
-import org.loopsexercises.Factorial;
-import org.loopsexercises.IsAPerfectNumber;
 
 import java.util.Random;
-import java.util.Stack;
 
 
 public class FourthExercise {
@@ -13,7 +9,6 @@ public class FourthExercise {
         int finalNumber = 3;
         int resultOfIterations = 0;
         int randomNumber = 0;
-        Dividers dividers = new Dividers();
         Factorial factorial = new Factorial();
         resultOfIterations = sum(finalNumber);
         randomNumber = generateRandomNumber(resultOfIterations);
@@ -22,9 +17,9 @@ public class FourthExercise {
         System.out.println("Result of the sum of iterations " + resultOfIterations);
         System.out.println("SQRT of the result of iterations: " + Math.sqrt(resultOfIterations));
         System.out.println("Random number generated: " + randomNumber);
-        System.out.println("Dividers of the result: " + dividers.getDividers(resultOfIterations));
+        System.out.println("Dividers of the result: " + Dividers.getDividers(resultOfIterations));
         System.out.println("Factorial of the result number: " + factorial.getFactorial(resultOfIterations));
-        System.out.println("Validation of if the result is a perfect number: " + IsAPerfectNumber.isPerfectNumber(resultOfIterations, dividers.getDividers(resultOfIterations)));
+        System.out.println("Validation of if the result is a perfect number: " + IsAPerfectNumber.isPerfectNumber(resultOfIterations, Dividers.getDividers(resultOfIterations)));
     }
 
     static int sum(int lastIteration) {
